@@ -1,1 +1,0 @@
- C:\\wildfire\\.dart_tool\\flutter_build\\602cd77e3f8f8a7a2298617e56fe5cc9\\native_assets.yaml: 
