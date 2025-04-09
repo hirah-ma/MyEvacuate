@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'chat/chatscreen.dart'; // Ensure this points to CommunityChatPage
 
 class PrecautionsPage extends StatelessWidget {
   final List<Map<String, String>> precautions = [
@@ -27,12 +28,17 @@ class PrecautionsPage extends StatelessWidget {
       'description': 'Know basic first aid for burns, cuts, and fractures.',
       'image': 'assets/first_aid.png',
     },
+    {
+      'title': 'Community Chat',
+      'description': 'Chat with nearby users',
+      'image': 'assets/community_chat.png',
+    },
   ];
 
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
-      padding: EdgeInsets.all(10),
+      padding: const EdgeInsets.all(10),
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
         childAspectRatio: 1.0,
@@ -40,13 +46,22 @@ class PrecautionsPage extends StatelessWidget {
       itemCount: precautions.length,
       itemBuilder: (context, index) {
         return Card(
-          margin: EdgeInsets.all(10),
+          margin: const EdgeInsets.all(10),
           elevation: 5,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(10),
           ),
           child: InkWell(
-            onTap: () {},
+            onTap: () {
+              if (precautions[index]['title'] == 'Community Chat') {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => CommunityChatPage(areaId: 'hyd_500090'),
+                  ),
+                );
+              }
+            },
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -57,26 +72,25 @@ class PrecautionsPage extends StatelessWidget {
                   width: 80,
                   fit: BoxFit.cover,
                   errorBuilder: (context, error, stackTrace) {
-                    return Icon(Icons.broken_image, size: 80, color: Colors.grey);
+                    return const Icon(Icons.broken_image, size: 80, color: Colors.grey);
                   },
                 ),
-
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Text(
                   precautions[index]['title']!,
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
                     color: Colors.red,
                   ),
                   textAlign: TextAlign.center,
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
                     precautions[index]['description']!,
-                    style: TextStyle(fontSize: 14, color: Colors.black87),
+                    style: const TextStyle(fontSize: 14, color: Colors.black87),
                     textAlign: TextAlign.center,
                   ),
                 ),
