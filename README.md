@@ -2,13 +2,13 @@
 
 MyEvacuate is a smart, AI-driven platform designed to guide individuals to safety during natural disasters and crisis situations. Whether it's a fire, flood, or earthquake, **MyEvacuate empowers users with real-time intelligence, optimized evacuation routes, and personalized alerts** to escape danger zones quickly and safely.
 
-![MyEvacuate Banner](assets/banner.jpg)
+![MyEvacuate Banner](wildfire/assets/banner.jpg)
 
 ---
 
 ## 🎥 Demo Video  
 📽️ Watch MyEvacuate in action:  
-➡️ [Click to watch](assets/demo.mp4)
+➡️ [Click to watch](wildfire/assets/demo.mp4)
 
 ---
 
@@ -89,10 +89,10 @@ The result: **Smart, relevant, and urgent warnings** tailored for each user.
 
 | Evacuation Map | Alert Classification | AI Risk Zones | IoT Integration |
 |----------------|----------------------|----------------|-----------------|
-| ![map](assets/map.jpg) | ![alerts](assets/alerts.png) | ![heatmap](ai.png) | ![iot](assets/iot.jpg) |
+| ![map](wildfire/assets/map.jpg) | ![alerts](wildfire/assets/alerts.png) | ![heatmap](wildfire/assets/ai.png) | ![iot](wildfire/assets/iot.jpg) |
 
 ### 🗣️ Community Chat
-![chats](assets/chats.png)
+![chats](wildfire/assets/chats.png)
 
 ---
 
