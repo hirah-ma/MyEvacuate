@@ -87,11 +87,11 @@ The result: **Smart, relevant, and urgent warnings** tailored for each user.
 
 ## 📸 Screenshots
 
-| Evacuation Map | Alert Classification | AI Risk Zones | IoT Integration |
-|----------------|----------------------|----------------|-----------------|
-| ![map](wildfire/assets/map.jpg) | ![alerts](wildfire/assets/alerts.png) | ![heatmap](wildfire/assets/ai.png) | ![iot](wildfire/assets/iot.jpg) |
+| Evacuation Map | Alert Classification | AI Risk Zones | IoT Integration | Community Chats |
+|----------------|----------------------|----------------|-----------------|-----------------|
+| ![map](wildfire/assets/map.jpg) | ![alerts](wildfire/assets/alerts.png) | ![heatmap](wildfire/assets/ai.jpg) | ![iot](wildfire/assets/iot.jpg) | ![chats](wildfire/assets/chats.png) |
 
-### 🗣️ Community Chat
+
 ![chats](wildfire/assets/chats.png)
 
 ---
