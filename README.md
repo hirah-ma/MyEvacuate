@@ -92,7 +92,7 @@ The result: **Smart, relevant, and urgent warnings** tailored for each user.
 | ![map](wildfire/assets/map.jpg) | ![alerts](wildfire/assets/alerts.png) | ![heatmap](wildfire/assets/ai.jpg) | ![iot](wildfire/assets/iot.jpg) | ![chats](wildfire/assets/chats.png) |
 
 
-![chats](wildfire/assets/chats.png)
+
 
 ---
 
