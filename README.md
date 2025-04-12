@@ -1,8 +1,20 @@
-# 🔥 Wildfire Evacuation & Emergency Companion App
+# 🚨 MyEvacuate – AI-Powered Emergency Evacuation Assistant
 
+MyEvacuate is a smart, AI-driven platform designed to guide individuals to safety during natural disasters and crisis situations. Whether it's a fire, flood, or earthquake, **MyEvacuate empowers users with real-time intelligence, optimized evacuation routes, and personalized alerts** to escape danger zones quickly and safely.
 
+![MyEvacuate Banner](assets/banner.jpg)
 
-> A real-time wildfire tracking, evacuation planning, community help, and safety platform built using Flutter & Python (Flask).
+---
+
+## 🎥 Demo Video  
+📽️ Watch MyEvacuate in action:  
+➡️ [Click to watch](assets/demo.mp4)
+
+---
+
+## 🧠 Built with AI at its Core
+
+We use machine learning and geospatial intelligence to make **disaster response smarter, faster, and more personal.**
 
 ---
 
@@ -10,68 +22,84 @@
 
 ### 🧭 Wildfire Detection & Evacuation
 - Live wildfire zone tracking using **NASA FIRMS API**
-- Dynamic **evacuation routes avoiding fire** (OSMnx + NetworkX)
-- Map view with fire zones, user location & safe routes (Google Maps API)
+- Dynamic evacuation route planning via **OSMnx + NetworkX**
+- Fire zones, user location, and safe paths shown on a live map
 
 ### 🧃 Emergency Resources Near You
-- Nearby **water**, **food**, and **shelter** points auto-plotted
+- Nearby **water**, **food**, and **shelter** points auto-detected
 - Map-based emergency resource discovery
 
 ### 🧑‍🤝‍🧑 Community Chat & Support
-- **100km radius** based community chat
+- Real-time chat within a **100km radius**
 - Users can:
   - Report fire/smoke
-  - Share rescue help
-  - Request resources
-  - Emotionally support each other
+  - Share rescue info
+  - Request supplies
+  - Offer emotional support
 
 ### 🧠 AI Chat Assistant
 - Powered by **Dialogflow / LLM API**
-- Helps with:
-  - Fire safety instructions
+- Helps users with:
+  - Fire safety tips
   - Trapped situations
-  - Helpline suggestions
+  - Helpline guidance
 
-### 🆘 Helpline Center
-- Local emergency numbers at one click:
-  - 🚒 Fire
-  - 🚑 Ambulance
-  - 🏥 Medical help
+### 🗺️ AI-Based Route Optimization
+> Our AI suggests the **safest evacuation paths** by evaluating:
+- Real-time traffic & blockages
+- Fire & hazard zone overlays
+- Crowd-sourced alerts
+- Historical disaster data
 
-### 💸 Donation System
-- **Razorpay** integrated
-- Community-powered donations
-- Track usage & offer help
+### 📍 Risk Zone Detection using AI
+> Pre-trained ML models classify:
+- Satellite imagery and fire intensity
+- Drone visuals (future integration)
+- Temporal disaster risk zones
 
-### 📚 Educational Safety Guide
-- Precautions for wildfires
-- First-aid for:
-  - 🔥 Burns
-  - 🫁 Smoke inhalation
-- Evacuation checklist
+### 📢 NLP-based Alert Prioritization
+> AI scans and filters alerts from:
+- Government feeds
+- Social media & news
+- User reports
 
----
+The result: **Smart, relevant, and urgent warnings** tailored for each user.
 
-## 🧪 Tech Stack
-
-| Layer      | Tech Used |
-|------------|-----------|
-| Frontend   | Flutter (Google Maps, Firebase, Razorpay SDK) |
-| Backend    | Python Flask, OSMnx, NetworkX, NASA FIRMS API |
-| Database   | Firebase Realtime DB / Firestore |
-| AI Assistant | Gemini
-| Payments   | Razorpay |
-| Maps       | Google Maps API |
-| Notifications | Firebase Cloud Messaging |
+### 👥 AI-Powered Personalization
+- Special routes for the elderly, children, or disabled
+- Multi-language support + voice instructions
+- Auto-generated checklists based on individual needs
 
 ---
 
-## 🛠️ How to Run Locally
-it is a flutter project.
-deployed on playstore(future)
+## 🛠️ Tech Stack
 
-### 1️⃣ Backend (Flask API)
+| Tech                 | Role                                 |
+|----------------------|--------------------------------------|
+| **FastAPI**          | Backend APIs & AI endpoints          |
+| **Firebase**         | Real-time user location & notifications |
+| **Mapbox / Leaflet.js** | Map visualization & navigation   |
+| **spaCy + HuggingFace** | NLP-based alert processing        |
+| **OSMnx + NetworkX** | Pathfinding & route optimization     |
+| **Tailwind CSS**     | Responsive UI styling                |
+
+---
+
+## 📸 Screenshots
+
+| Evacuation Map | Alert Classification | AI Risk Zones | IoT Integration |
+|----------------|----------------------|----------------|-----------------|
+| ![map](assets/map.jpg) | ![alerts](assets/alerts.png) | ![heatmap](ai.png) | ![iot](assets/iot.jpg) |
+
+### 🗣️ Community Chat
+![chats](assets/chats.png)
+
+---
+
+## 🧪 How to Run Locally
+
 ```bash
-cd backend/
+git clone https://github.com/hirah-ma/MyEvacuate
+cd myevacuate
 pip install -r requirements.txt
-python app.py
+uvicorn app:main --reload
