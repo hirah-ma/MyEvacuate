@@ -6,6 +6,12 @@ MyEvacuate is a smart, AI-driven platform designed to guide individuals to safet
 
 ---
 
+## 📸 Screenshots
+
+| Evacuation Map | Alert Classification | AI Risk Zones | IoT Integration | Community Chats |
+|----------------|----------------------|----------------|-----------------|-----------------|
+| ![map](wildfire/assets/map.jpg) | ![alerts](wildfire/assets/alerts.png) | ![heatmap](wildfire/assets/ai.jpg) | ![iot](wildfire/assets/iot.jpg) | ![chats](wildfire/assets/chats.png) |
+
 ## 🎥 Demo Video  
 📽️ Watch MyEvacuate in action:  
 ➡️ [Click to watch](wildfire/assets/demo.mp4)
@@ -85,11 +91,6 @@ The result: **Smart, relevant, and urgent warnings** tailored for each user.
 
 ---
 
-## 📸 Screenshots
-
-| Evacuation Map | Alert Classification | AI Risk Zones | IoT Integration | Community Chats |
-|----------------|----------------------|----------------|-----------------|-----------------|
-| ![map](wildfire/assets/map.jpg) | ![alerts](wildfire/assets/alerts.png) | ![heatmap](wildfire/assets/ai.jpg) | ![iot](wildfire/assets/iot.jpg) | ![chats](wildfire/assets/chats.png) |
 
 
 
